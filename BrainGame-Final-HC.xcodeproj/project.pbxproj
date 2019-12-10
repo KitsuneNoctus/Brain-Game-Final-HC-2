@@ -16,7 +16,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		3F36488823A0502B00848267 /* BrainGame-Final-HC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "BrainGame-Final-HC.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3F36488823A0502B00848267 /* BrainGame.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BrainGame.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3F36488B23A0502B00848267 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3F36488D23A0502B00848267 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		3F36488F23A0502B00848267 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -48,7 +48,7 @@
 		3F36488923A0502B00848267 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				3F36488823A0502B00848267 /* BrainGame-Final-HC.app */,
+				3F36488823A0502B00848267 /* BrainGame.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -84,7 +84,7 @@
 			);
 			name = "BrainGame-Final-HC";
 			productName = "BrainGame-Final-HC";
-			productReference = 3F36488823A0502B00848267 /* BrainGame-Final-HC.app */;
+			productReference = 3F36488823A0502B00848267 /* BrainGame.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -291,7 +291,7 @@
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.henrycalderon.BrainGame-Final-HC";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = BrainGame;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -308,7 +308,7 @@
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.henrycalderon.BrainGame-Final-HC";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = BrainGame;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
