@@ -63,6 +63,7 @@ class GameAreaViewController: UIViewController {
             if self.timeLeft <= 0{
                 timerChange.invalidate()
 //                self.goToResults()
+                self.restartGame()
             }
             self.timeLeft -= 1
             
@@ -94,6 +95,8 @@ class GameAreaViewController: UIViewController {
     }
     
     func gameEasy(){
+        restartButton.isHidden = true
+        restartButton.isEnabled = false
         time()
         scoreLabel.text = "Score: \(points)"
         topColorLabel.text = colors[Int.random(in: 0..<colors.count)]
@@ -126,6 +129,11 @@ class GameAreaViewController: UIViewController {
     
 
     @IBAction func restartButtonPressed(_ sender: Any) {
+        restartButton.isHidden = true
+        restartButton.isEnabled = false
+        timeLeft = 60
+        points = 0
+        gameRun()
     }
     /*
     // MARK: - Navigation
