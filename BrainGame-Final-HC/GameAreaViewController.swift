@@ -31,22 +31,30 @@ class GameAreaViewController: UIViewController {
         }
     }
     
-//    var timer: Timer?
-//    var timeLeft: Int = 60{
-//        didSet{
-//            timerLabel.text = "Time Left:\(timeLeft)"
-//        }
-//    }
-//
-//    func time(){
-//        timer = Timer.scheduledTimer(withTimeInterval: 1.0, target: self, selector: #selector(time),)
-//    }
+    var timer: Timer?
+    var timeLeft: Int = 60{
+        didSet{
+            timerLabel.text = "Time Left:\(timeLeft)"
+        }
+    }
+
+    
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
         gameRun()
     }
+    
+     func time(){
+         timer = Timer.scheduledTimer(withTimeInterval: 1, repeats: true, block: { timerChange in
+            if self.timeLeft <= 0{
+                timerChange.invalidate()
+            }
+            self.timeLeft -= 1
+            
+         })
+     }
     
     func gameRun(){
         if difficulty == .easy{
@@ -68,6 +76,7 @@ class GameAreaViewController: UIViewController {
     }
     
     func gameEasy(){
+        time()
         scoreLabel.text = "Score: \(points)"
         topColorLabel.text = colors[Int.random(in: 0..<colors.count)]
         let bottomLableColor = colors[Int.random(in: 0..<colors.count)]
