@@ -21,6 +21,7 @@ class GameAreaViewController: UIViewController {
     @IBOutlet weak var noButton: UIButton!
     
     @IBOutlet weak var restartButton: UIButton!
+    @IBOutlet weak var exitGameButton: UIButton!
     
     var difficulty: Difficulty!
     
