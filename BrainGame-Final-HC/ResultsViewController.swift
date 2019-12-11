@@ -8,10 +8,7 @@
 
 import UIKit
 
-class ResultsViewController: UIViewController {
-    
-    var score: Int!
-    
+class ResultsViewController: GameAreaViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
