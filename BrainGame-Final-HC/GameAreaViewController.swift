@@ -54,12 +54,24 @@ class GameAreaViewController: UIViewController {
         }
     }
     
+    func changeLabels(){
+        if difficulty == .easy{
+            topColorLabel.text = colors[Int.random(in: 0..<colors.count)]
+            bottomColorLabel.text = colors[Int.random(in: 0..<colors.count)]
+        }else{
+            //Extremely temporary code
+            topColorLabel.text = colors[Int.random(in: 0..<colors.count)]
+            bottomColorLabel.text = colors[Int.random(in: 0..<colors.count)]
+        }
+    }
+    
     func gameEasy(){
         topColorLabel.text = colors[Int.random(in: 0..<colors.count)]
         bottomColorLabel.text = colors[Int.random(in: 0..<colors.count)]
     }
     
     @IBAction func yesButtonPressed(_ sender: Any) {
+        
     }
     @IBAction func noButtonPressed(_ sender: Any) {
     }
