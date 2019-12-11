@@ -22,17 +22,25 @@ class ViewController: UIViewController {
     }
     
     func goToGameArea(){
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        let controller = storyboard.instantiateViewController(identifier: "GameAreaViewController") as! GameAreaViewController
+        controller.difficulty = .easy
         
+        //
+    self.navigationController?.present(controller, animated: true, completion: nil)
     }
     
     
     @IBAction func easyButtonPressed(_ sender: Any) {
+        goToGameArea()
     }
     
     @IBAction func moderateButtonPressed(_ sender: Any) {
+        goToGameArea()
     }
     
     @IBAction func hardButtonPressed(_ sender: Any) {
+        goToGameArea()
     }
     
 

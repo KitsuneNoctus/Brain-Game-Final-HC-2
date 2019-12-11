@@ -9,7 +9,14 @@
 import UIKit
 
 class GameAreaViewController: UIViewController {
+    let colors = ["red","blue",]
+    
+    @IBOutlet weak var topColorLabel: UILabel!
+    
+    @IBOutlet weak var bottomColorLabel: UILabel!
+    
     @IBOutlet weak var yesButton: UIButton!
+    @IBOutlet weak var noButton: UIButton!
     
     var difficulty: Difficulty!
     
@@ -17,6 +24,18 @@ class GameAreaViewController: UIViewController {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+//        print(difficulty)
+        gameRun()
+    }
+    
+    func gameRun(){
+        if difficulty == .easy{
+            print("Hello")
+        }
+    }
+    
+    func gameEasy(){
+        
     }
     
 

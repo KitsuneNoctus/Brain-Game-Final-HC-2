@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="G3Z-sy-mfg">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15510"/>
@@ -53,6 +53,7 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <navigationItem key="navigationItem" id="GNC-5I-wQe"/>
                     <connections>
                         <outlet property="easyButton" destination="d30-4K-bEI" id="7Y3-aA-U7V"/>
                         <outlet property="gameTitle" destination="pyQ-1s-NsI" id="E1E-x0-CIF"/>
@@ -62,12 +63,12 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="139" y="138"/>
+            <point key="canvasLocation" x="1047.8260869565217" y="137.94642857142856"/>
         </scene>
         <!--Game Area View Controller-->
         <scene sceneID="c2M-sI-yo5">
             <objects>
-                <viewController id="FyP-1I-l3F" customClass="GameAreaViewController" customModule="BrainGame" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="GameAreaViewController" id="FyP-1I-l3F" customClass="GameAreaViewController" customModule="BrainGame" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="sjr-VL-vyu">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -92,18 +93,45 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                 <state key="normal" title="Yes"/>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Sn7-HN-9lJ">
+                                <rect key="frame" x="293" y="632" width="32" height="42"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <state key="normal" title="No"/>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="unM-Jk-ciu"/>
                     </view>
                     <navigationItem key="navigationItem" id="QXl-Ej-pdV"/>
                     <connections>
+                        <outlet property="bottomColorLabel" destination="amu-6P-Yq0" id="FQT-HL-mpo"/>
+                        <outlet property="noButton" destination="Sn7-HN-9lJ" id="BAu-vE-ZJ9"/>
+                        <outlet property="topColorLabel" destination="Cfn-VN-Fpt" id="kcY-iK-Cxn"/>
                         <outlet property="yesButton" destination="McP-ry-0ZK" id="WHT-5z-LdN"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bas-SH-oeq" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="912" y="138"/>
+            <point key="canvasLocation" x="1821.7391304347827" y="137.94642857142856"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="F7y-XZ-4RR">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="G3Z-sy-mfg" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="6uO-Hk-gif">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="Ehm-Qt-Q4e"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Q9U-iS-ZWa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="137.68115942028987" y="137.94642857142856"/>
         </scene>
     </scenes>
 </document>
