@@ -19,7 +19,9 @@
                                 <rect key="frame" x="182" y="417" width="52" height="42"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="25"/>
-                                <state key="normal" title="Easy"/>
+                                <state key="normal" title="Easy">
+                                    <color key="titleColor" systemColor="systemYellowColor" red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
                                 <connections>
                                     <action selector="easyButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="hgp-VE-4YH"/>
                                 </connections>
@@ -28,7 +30,9 @@
                                 <rect key="frame" x="155" y="502" width="104" height="42"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="25"/>
-                                <state key="normal" title="Moderate"/>
+                                <state key="normal" title="Moderate">
+                                    <color key="titleColor" systemColor="systemOrangeColor" red="1" green="0.58431372550000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
                                 <connections>
                                     <action selector="moderateButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="5Cj-W9-fRQ"/>
                                 </connections>
@@ -37,7 +41,9 @@
                                 <rect key="frame" x="181" y="593" width="53" height="42"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="25"/>
-                                <state key="normal" title="Hard"/>
+                                <state key="normal" title="Hard">
+                                    <color key="titleColor" systemColor="systemRedColor" red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
                                 <connections>
                                     <action selector="hardButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="D4b-bw-fB0"/>
                                 </connections>
@@ -91,7 +97,9 @@
                                 <rect key="frame" x="86" y="632" width="39" height="42"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="25"/>
-                                <state key="normal" title="Yes"/>
+                                <state key="normal" title="Yes">
+                                    <color key="titleColor" systemColor="systemGreenColor" red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
                                 <connections>
                                     <action selector="yesButtonPressed:" destination="FyP-1I-l3F" eventType="touchUpInside" id="T6q-2j-g78"/>
                                 </connections>
@@ -100,7 +108,9 @@
                                 <rect key="frame" x="293" y="632" width="32" height="42"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="25"/>
-                                <state key="normal" title="No"/>
+                                <state key="normal" title="No">
+                                    <color key="titleColor" systemColor="systemPinkColor" red="1" green="0.1764705882" blue="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
                                 <connections>
                                     <action selector="noButtonPressed:" destination="FyP-1I-l3F" eventType="touchUpInside" id="gw4-VC-A8S"/>
                                 </connections>
