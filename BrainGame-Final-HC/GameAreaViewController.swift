@@ -31,11 +31,20 @@ class GameAreaViewController: UIViewController {
         }
     }
     
+//    var timer: Timer?
+//    var timeLeft: Int = 60{
+//        didSet{
+//            timerLabel.text = "Time Left:\(timeLeft)"
+//        }
+//    }
+//    
+//    func time(){
+//        timer = Timer.scheduledTimer(withTimeInterval: 1.0, target: self, selector: #selector(time),)
+//    }
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
-//        print(difficulty)
         gameRun()
     }
     
@@ -48,6 +57,7 @@ class GameAreaViewController: UIViewController {
     func gameEasy(){
         
     }
+    
     @IBAction func yesButtonPressed(_ sender: Any) {
     }
     @IBAction func noButtonPressed(_ sender: Any) {
