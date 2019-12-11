@@ -46,21 +46,21 @@ class GameAreaViewController: UIViewController {
         gameRun()
     }
     
-    func goToResults(){
-        let storyboard = UIStoryboard(name: "Main", bundle: nil)
-        let controller = storyboard.instantiateViewController(identifier: "ResultsViewController") as! ResultsViewController
-        //controller.difficulty = .easy
-        controller.score = points
-        
-        //
-    self.navigationController?.present(controller, animated: true, completion: nil)
-    }
+//    func goToResults(){
+//        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+//        let controller = storyboard.instantiateViewController(identifier: "ResultsViewController") as! ResultsViewController
+//        controller.score = points
+//
+//        //
+//    self.navigationController?.present(controller, animated: true, completion: nil)
+//    }
+    
     // MARK: - Game Functionality
      func time(){
          timer = Timer.scheduledTimer(withTimeInterval: 1, repeats: true, block: { timerChange in
             if self.timeLeft <= 0{
                 timerChange.invalidate()
-                self.goToResults()
+//                self.goToResults()
             }
             self.timeLeft -= 1
             

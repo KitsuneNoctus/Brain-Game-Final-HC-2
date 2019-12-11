@@ -15,9 +15,14 @@ class ResultsViewController: GameAreaViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        finalScoreLabel.text = "Your Score\(self.score)"
+        displayEnd()
 
         // Do any additional setup after loading the view.
+    }
+    
+    func displayEnd(){
+        let useString = "Your Score\(String(describing: self.score))"
+        finalScoreLabel.text = useString
     }
     
 
