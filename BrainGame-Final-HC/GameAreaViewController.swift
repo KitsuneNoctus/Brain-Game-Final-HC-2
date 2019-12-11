@@ -9,7 +9,6 @@
 import UIKit
 
 class GameAreaViewController: UIViewController {
-    let colors = ["red","blue",]
     
     @IBOutlet weak var timerLabel: UILabel!
     @IBOutlet weak var scoreLabel: UILabel!
@@ -22,6 +21,15 @@ class GameAreaViewController: UIViewController {
     @IBOutlet weak var noButton: UIButton!
     
     var difficulty: Difficulty!
+    
+    let colors = ["red","blue","yellow","orange","green","purple"]
+    let colorDict = ["red": UIColor.red,"blue": UIColor.blue,"yellow": UIColor.yellow,"orange": UIColor.orange,"green": UIColor.red,"purple": UIColor.purple]
+    
+    var points:Int = 0{
+        didSet{
+            scoreLabel.text = "Score: \(points)"
+        }
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
