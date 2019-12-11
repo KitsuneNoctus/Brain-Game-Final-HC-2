@@ -22,7 +22,6 @@
                                 <state key="normal" title="Easy"/>
                                 <connections>
                                     <action selector="easyButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="hgp-VE-4YH"/>
-                                    <segue destination="FyP-1I-l3F" kind="show" identifier="easyButton" id="DMk-f5-ahW"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IPr-PM-RSR">
@@ -32,7 +31,6 @@
                                 <state key="normal" title="Moderate"/>
                                 <connections>
                                     <action selector="moderateButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="5Cj-W9-fRQ"/>
-                                    <segue destination="FyP-1I-l3F" kind="show" identifier="moderateButton" id="Gby-5p-7CK"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zob-iB-JaJ">
@@ -42,7 +40,6 @@
                                 <state key="normal" title="Hard"/>
                                 <connections>
                                     <action selector="hardButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="D4b-bw-fB0"/>
-                                    <segue destination="FyP-1I-l3F" kind="show" identifier="hardButton" id="Wbr-GK-m9c"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Brain Game" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pyQ-1s-NsI">
@@ -67,12 +64,12 @@
             </objects>
             <point key="canvasLocation" x="139" y="138"/>
         </scene>
-        <!--View Controller-->
+        <!--Game Area View Controller-->
         <scene sceneID="c2M-sI-yo5">
             <objects>
-                <viewController id="FyP-1I-l3F" sceneMemberID="viewController">
+                <viewController id="FyP-1I-l3F" customClass="GameAreaViewController" customModule="BrainGame" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="sjr-VL-vyu">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Top Color" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Cfn-VN-Fpt">
@@ -100,13 +97,13 @@
                         <viewLayoutGuide key="safeArea" id="unM-Jk-ciu"/>
                     </view>
                     <navigationItem key="navigationItem" id="QXl-Ej-pdV"/>
+                    <connections>
+                        <outlet property="yesButton" destination="McP-ry-0ZK" id="WHT-5z-LdN"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bas-SH-oeq" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="912" y="138"/>
         </scene>
     </scenes>
-    <inferredMetricsTieBreakers>
-        <segue reference="DMk-f5-ahW"/>
-    </inferredMetricsTieBreakers>
 </document>

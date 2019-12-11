@@ -21,6 +21,11 @@ class ViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
     
+    func goToGameArea(){
+        
+    }
+    
+    
     @IBAction func easyButtonPressed(_ sender: Any) {
     }
     

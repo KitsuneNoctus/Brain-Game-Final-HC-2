@@ -13,6 +13,8 @@
 		3F36489323A0502B00848267 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3F36489123A0502B00848267 /* Main.storyboard */; };
 		3F36489523A0502D00848267 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3F36489423A0502D00848267 /* Assets.xcassets */; };
 		3F36489823A0502D00848267 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3F36489623A0502D00848267 /* LaunchScreen.storyboard */; };
+		3F3648C423A063E500848267 /* GameAreaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F3648C323A063E500848267 /* GameAreaViewController.swift */; };
+		3F3648C623A0662300848267 /* HelperEnums.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F3648C523A0662300848267 /* HelperEnums.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,8 @@
 		3F36489423A0502D00848267 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3F36489723A0502D00848267 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3F36489923A0502D00848267 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3F3648C323A063E500848267 /* GameAreaViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameAreaViewController.swift; sourceTree = "<group>"; };
+		3F3648C523A0662300848267 /* HelperEnums.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelperEnums.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,9 +64,11 @@
 				3F36488D23A0502B00848267 /* SceneDelegate.swift */,
 				3F36488F23A0502B00848267 /* ViewController.swift */,
 				3F36489123A0502B00848267 /* Main.storyboard */,
+				3F3648C323A063E500848267 /* GameAreaViewController.swift */,
 				3F36489423A0502D00848267 /* Assets.xcassets */,
 				3F36489623A0502D00848267 /* LaunchScreen.storyboard */,
 				3F36489923A0502D00848267 /* Info.plist */,
+				3F3648C523A0662300848267 /* HelperEnums.swift */,
 			);
 			path = "BrainGame-Final-HC";
 			sourceTree = "<group>";
@@ -139,8 +145,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				3F36489023A0502B00848267 /* ViewController.swift in Sources */,
+				3F3648C423A063E500848267 /* GameAreaViewController.swift in Sources */,
 				3F36488C23A0502B00848267 /* AppDelegate.swift in Sources */,
 				3F36488E23A0502B00848267 /* SceneDelegate.swift in Sources */,
+				3F3648C623A0662300848267 /* HelperEnums.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
