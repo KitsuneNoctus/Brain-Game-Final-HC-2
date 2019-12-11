@@ -103,16 +103,14 @@
                                     <action selector="noButtonPressed:" destination="FyP-1I-l3F" eventType="touchUpInside" id="gw4-VC-A8S"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Time Left: 60" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6UC-OP-HJe">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Time Left: 60" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6UC-OP-HJe">
                                 <rect key="frame" x="44" y="128" width="123" height="36"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" weight="thin" pointSize="20"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Score: 0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0h2-Vc-kHG">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Score: 0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0h2-Vc-kHG">
                                 <rect key="frame" x="257" y="134" width="105" height="24"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" weight="light" pointSize="20"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -124,8 +122,9 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CjX-RB-KHl">
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CjX-RB-KHl">
                                 <rect key="frame" x="159" y="537" width="97" height="46"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="28"/>
                                 <state key="normal" title="Replay?"/>
                                 <connections>
@@ -147,10 +146,13 @@
                         <constraints>
                             <constraint firstItem="Sn7-HN-9lJ" firstAttribute="leading" secondItem="McP-ry-0ZK" secondAttribute="trailing" constant="174" id="8f9-lN-78o"/>
                             <constraint firstItem="unM-Jk-ciu" firstAttribute="bottom" secondItem="McP-ry-0ZK" secondAttribute="bottom" constant="185" id="9X2-nv-VwN"/>
-                            <constraint firstItem="unM-Jk-ciu" firstAttribute="bottom" secondItem="CjX-RB-KHl" secondAttribute="bottom" constant="279" id="GWL-7h-hom"/>
                             <constraint firstItem="Sn7-HN-9lJ" firstAttribute="bottom" secondItem="McP-ry-0ZK" secondAttribute="bottom" id="RVl-UB-BXY"/>
                             <constraint firstItem="Sn7-HN-9lJ" firstAttribute="height" secondItem="McP-ry-0ZK" secondAttribute="height" id="blV-IQ-L8u"/>
+                            <constraint firstItem="6UC-OP-HJe" firstAttribute="top" secondItem="unM-Jk-ciu" secondAttribute="top" constant="84" id="iBi-xr-Pi3"/>
+                            <constraint firstItem="0h2-Vc-kHG" firstAttribute="bottom" secondItem="6UC-OP-HJe" secondAttribute="bottom" id="lnr-1T-pYF"/>
                             <constraint firstItem="Sn7-HN-9lJ" firstAttribute="leading" secondItem="unM-Jk-ciu" secondAttribute="leading" constant="294" id="mt7-a8-HXV"/>
+                            <constraint firstItem="6UC-OP-HJe" firstAttribute="leading" secondItem="unM-Jk-ciu" secondAttribute="leading" constant="44" id="qv4-NK-A2a"/>
+                            <constraint firstItem="0h2-Vc-kHG" firstAttribute="leading" secondItem="6UC-OP-HJe" secondAttribute="trailing" constant="90" id="yao-4N-7r1"/>
                             <constraint firstItem="McP-ry-0ZK" firstAttribute="leading" secondItem="unM-Jk-ciu" secondAttribute="leading" constant="20" id="zB8-e8-HcD"/>
                             <constraint firstItem="Sn7-HN-9lJ" firstAttribute="width" secondItem="McP-ry-0ZK" secondAttribute="width" id="zaO-VD-4tM"/>
                         </constraints>
