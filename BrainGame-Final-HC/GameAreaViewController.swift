@@ -67,6 +67,8 @@ class GameAreaViewController: UIViewController {
 //                self.goToResults()
                 self.yesButton.isEnabled = false
                 self.noButton.isEnabled = false
+                self.exitGameButton.isHidden = false
+                self.exitGameButton.isEnabled = true
                 self.restartGame()
             }
             self.timeLeft -= 1
@@ -101,6 +103,8 @@ class GameAreaViewController: UIViewController {
     func gameEasy(){
         restartButton.isHidden = true
         restartButton.isEnabled = false
+        exitGameButton.isHidden = true
+        exitGameButton.isEnabled = false
         time()
         scoreLabel.text = "Score: \(points)"
         topColorLabel.text = colors[Int.random(in: 0..<colors.count)]
@@ -136,6 +140,8 @@ class GameAreaViewController: UIViewController {
         //Reference to code from Josue
         restartButton.isHidden = true
         restartButton.isEnabled = false
+        exitGameButton.isHidden = true
+        exitGameButton.isEnabled = false
         yesButton.isEnabled = true
         noButton.isEnabled = true
         timeLeft = 60
