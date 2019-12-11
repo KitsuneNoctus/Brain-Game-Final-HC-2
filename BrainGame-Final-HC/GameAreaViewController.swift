@@ -59,10 +59,13 @@ class GameAreaViewController: UIViewController {
     
     // MARK: - Game Functionality
      func time(){
+        //Reference to code from Josue
          timer = Timer.scheduledTimer(withTimeInterval: 1, repeats: true, block: { timerChange in
             if self.timeLeft <= 0{
                 timerChange.invalidate()
 //                self.goToResults()
+                self.yesButton.isEnabled = false
+                self.noButton.isEnabled = false
                 self.restartGame()
             }
             self.timeLeft -= 1
@@ -129,8 +132,11 @@ class GameAreaViewController: UIViewController {
     
 
     @IBAction func restartButtonPressed(_ sender: Any) {
+        //Reference to code from Josue
         restartButton.isHidden = true
         restartButton.isEnabled = false
+        yesButton.isEnabled = true
+        noButton.isEnabled = true
         timeLeft = 60
         points = 0
         gameRun()
