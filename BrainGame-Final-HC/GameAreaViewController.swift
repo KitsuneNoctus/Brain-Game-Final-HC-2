@@ -37,7 +37,7 @@ class GameAreaViewController: UIViewController {
 //            timerLabel.text = "Time Left:\(timeLeft)"
 //        }
 //    }
-//    
+//
 //    func time(){
 //        timer = Timer.scheduledTimer(withTimeInterval: 1.0, target: self, selector: #selector(time),)
 //    }
@@ -55,7 +55,8 @@ class GameAreaViewController: UIViewController {
     }
     
     func gameEasy(){
-        
+        topColorLabel.text = colors[Int.random(in: 0..<colors.count)]
+        bottomColorLabel.text = colors[Int.random(in: 0..<colors.count)]
     }
     
     @IBAction func yesButtonPressed(_ sender: Any) {
