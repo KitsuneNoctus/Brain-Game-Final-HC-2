@@ -9,9 +9,13 @@
 import UIKit
 
 class ResultsViewController: GameAreaViewController {
+    
+    @IBOutlet weak var finalScoreLabel: UILabel!
+    var score: Int!
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        finalScoreLabel.text = "Your Score\(self.score)"
 
         // Do any additional setup after loading the view.
     }

@@ -144,20 +144,32 @@
             </objects>
             <point key="canvasLocation" x="1821.7391304347827" y="137.94642857142856"/>
         </scene>
-        <!--View Controller-->
+        <!--Results View Controller-->
         <scene sceneID="RRr-yi-u7A">
             <objects>
-                <viewController id="Y0D-oM-WYI" sceneMemberID="viewController">
+                <viewController id="Y0D-oM-WYI" customClass="ResultsViewController" customModule="BrainGame" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="28F-Ds-XLr">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Your Score: 0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DUY-YV-71E">
+                                <rect key="frame" x="20" y="269" width="374" height="54"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="45"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="0S2-7w-hGA"/>
                     </view>
+                    <connections>
+                        <outlet property="finalScoreLabel" destination="DUY-YV-71E" id="azR-Sb-29z"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7JX-5P-YAD" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2585" y="133"/>
+            <point key="canvasLocation" x="2584.057971014493" y="132.58928571428572"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="F7y-XZ-4RR">
