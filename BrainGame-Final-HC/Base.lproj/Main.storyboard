@@ -112,13 +112,6 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Equal?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WWB-lu-kp7">
-                                <rect key="frame" x="183" y="331" width="48" height="20"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="italicSystem" pointSize="16"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Score: 0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0h2-Vc-kHG">
                                 <rect key="frame" x="257" y="134" width="105" height="24"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -126,6 +119,22 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Equal?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WWB-lu-kp7">
+                                <rect key="frame" x="183" y="331" width="48" height="20"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="italicSystem" pointSize="16"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CjX-RB-KHl">
+                                <rect key="frame" x="159" y="537" width="97" height="46"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="28"/>
+                                <state key="normal" title="Replay?"/>
+                                <connections>
+                                    <action selector="restartButtonPressed:" destination="FyP-1I-l3F" eventType="touchUpInside" id="Vnc-lA-f9q"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="unM-Jk-ciu"/>
@@ -134,6 +143,7 @@
                     <connections>
                         <outlet property="bottomColorLabel" destination="amu-6P-Yq0" id="FQT-HL-mpo"/>
                         <outlet property="noButton" destination="Sn7-HN-9lJ" id="BAu-vE-ZJ9"/>
+                        <outlet property="restartButton" destination="CjX-RB-KHl" id="FVk-BN-SlC"/>
                         <outlet property="scoreLabel" destination="0h2-Vc-kHG" id="bKU-yM-GPJ"/>
                         <outlet property="timerLabel" destination="6UC-OP-HJe" id="Xlj-pF-Jgj"/>
                         <outlet property="topColorLabel" destination="Cfn-VN-Fpt" id="kcY-iK-Cxn"/>

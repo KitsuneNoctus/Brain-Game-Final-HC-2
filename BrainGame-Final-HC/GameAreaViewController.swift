@@ -20,6 +20,8 @@ class GameAreaViewController: UIViewController {
     @IBOutlet weak var yesButton: UIButton!
     @IBOutlet weak var noButton: UIButton!
     
+    @IBOutlet weak var restartButton: UIButton!
+    
     var difficulty: Difficulty!
     
     let colors = ["red","blue","yellow","orange","green","purple"]
@@ -72,6 +74,11 @@ class GameAreaViewController: UIViewController {
             gameEasy()
         }
     }
+    
+    func restartGame(){
+        restartButton.isHidden = false
+        restartButton.isEnabled = true
+    }
 //--------------------------------------------------------------------
     func changeLabels(){
         if difficulty == .easy{
@@ -95,6 +102,7 @@ class GameAreaViewController: UIViewController {
         bottomColorLabel.textColor = colorDict[bottomLableColor]
     }
     
+    // MARK: - Buttons
     @IBAction func yesButtonPressed(_ sender: Any) {
         if topColorLabel.text == bottomColorLabel.text{
             points += 10
@@ -117,6 +125,8 @@ class GameAreaViewController: UIViewController {
     }
     
 
+    @IBAction func restartButtonPressed(_ sender: Any) {
+    }
     /*
     // MARK: - Navigation
 
