@@ -35,7 +35,7 @@ class GameAreaViewController: UIViewController {
     }
     
     var timer: Timer?
-    var timeLeft: Int = 10{
+    var timeLeft: Int = 60{
         didSet{
             timerLabel.text = "Time Left:\(timeLeft)"
         }
