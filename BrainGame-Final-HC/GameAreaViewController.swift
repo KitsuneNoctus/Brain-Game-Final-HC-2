@@ -9,7 +9,7 @@
 import UIKit
 
 class GameAreaViewController: UIViewController {
-    
+    // MARK: - Parameters
     @IBOutlet weak var timerLabel: UILabel!
     @IBOutlet weak var scoreLabel: UILabel!
     
@@ -40,7 +40,7 @@ class GameAreaViewController: UIViewController {
 
     
     
-    
+    // MARK: - ViewDidLoad
     override func viewDidLoad() {
         super.viewDidLoad()
         gameRun()
