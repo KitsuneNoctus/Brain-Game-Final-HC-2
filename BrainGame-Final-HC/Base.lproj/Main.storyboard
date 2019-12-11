@@ -139,6 +139,9 @@
                                 <rect key="frame" x="160" y="639" width="93" height="38"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="21"/>
                                 <state key="normal" title="Exit Game"/>
+                                <connections>
+                                    <action selector="exitPressed:" destination="FyP-1I-l3F" eventType="touchUpInside" id="yZz-hp-Agv"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Score: 0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0h2-Vc-kHG">
                                 <rect key="frame" x="250" y="134" width="105" height="24"/>

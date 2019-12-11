@@ -35,7 +35,7 @@ class GameAreaViewController: UIViewController {
     }
     
     var timer: Timer?
-    var timeLeft: Int = 60{
+    var timeLeft: Int = 10{
         didSet{
             timerLabel.text = "Time Left:\(timeLeft)"
         }
@@ -58,6 +58,14 @@ class GameAreaViewController: UIViewController {
 //    self.navigationController?.present(controller, animated: true, completion: nil)
 //    }
     
+//    func goHome(){
+//        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+//        let controller = storyboard.instantiateViewController(identifier: "ViewController") as! ViewController
+//
+//        //
+//    self.navigationController?.present(controller, animated: true, completion: nil)
+//    }
+    
     // MARK: - Game Functionality
      func time(){
         //Reference to code from Josue
@@ -67,7 +75,7 @@ class GameAreaViewController: UIViewController {
 //                self.goToResults()
                 self.yesButton.isEnabled = false
                 self.noButton.isEnabled = false
-                self.exitGameButton.isHidden = false
+//                self.exitGameButton.isHidden = false
                 self.exitGameButton.isEnabled = true
                 self.restartGame()
             }
@@ -148,6 +156,11 @@ class GameAreaViewController: UIViewController {
         points = 0
         gameRun()
     }
+    
+//    @IBAction func exitPressed(_ sender: Any) {
+//        self.goHome()
+//    }
+    
     /*
     // MARK: - Navigation
 
