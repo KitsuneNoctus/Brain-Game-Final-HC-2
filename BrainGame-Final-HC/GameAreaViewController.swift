@@ -40,6 +40,10 @@ class GameAreaViewController: UIViewController {
     func gameEasy(){
         
     }
+    @IBAction func yesButtonPressed(_ sender: Any) {
+    }
+    @IBAction func noButtonPressed(_ sender: Any) {
+    }
     
 
     /*
