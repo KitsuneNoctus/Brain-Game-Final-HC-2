@@ -23,7 +23,7 @@ class GameAreaViewController: UIViewController {
     var difficulty: Difficulty!
     
     let colors = ["red","blue","yellow","orange","green","purple"]
-    let colorDict = ["red": UIColor.red,"blue": UIColor.blue,"yellow": UIColor.yellow,"orange": UIColor.orange,"green": UIColor.red,"purple": UIColor.purple]
+    let colorDict = ["red": UIColor.red,"blue": UIColor.blue,"yellow": UIColor.yellow,"orange": UIColor.orange,"green": UIColor.green,"purple": UIColor.purple]
     
     var points:Int = 0{
         didSet{
@@ -58,7 +58,9 @@ class GameAreaViewController: UIViewController {
     func changeLabels(){
         if difficulty == .easy{
             topColorLabel.text = colors[Int.random(in: 0..<colors.count)]
-            bottomColorLabel.text = colors[Int.random(in: 0..<colors.count)]
+            let bottomLableColor = colors[Int.random(in: 0..<colors.count)]
+            bottomColorLabel.text = bottomLableColor
+            bottomColorLabel.textColor = colorDict[bottomLableColor]
         }else{
             //Extremely temporary code
             topColorLabel.text = colors[Int.random(in: 0..<colors.count)]
@@ -69,8 +71,9 @@ class GameAreaViewController: UIViewController {
     func gameEasy(){
         scoreLabel.text = "Score: \(points)"
         topColorLabel.text = colors[Int.random(in: 0..<colors.count)]
-        var bottomLableColor = colors[Int.random(in: 0..<colors.count)]
+        let bottomLableColor = colors[Int.random(in: 0..<colors.count)]
         bottomColorLabel.text = bottomLableColor
+        bottomColorLabel.textColor = colorDict[bottomLableColor]
     }
     
     @IBAction func yesButtonPressed(_ sender: Any) {
