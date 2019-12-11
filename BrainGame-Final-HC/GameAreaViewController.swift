@@ -51,7 +51,6 @@ class GameAreaViewController: UIViewController {
     func gameRun(){
         if difficulty == .easy{
             gameEasy()
-            print("Hello")
         }
     }
 //--------------------------------------------------------------------
