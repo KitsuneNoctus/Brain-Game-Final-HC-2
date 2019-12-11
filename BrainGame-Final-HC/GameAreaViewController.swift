@@ -11,8 +11,11 @@ import UIKit
 class GameAreaViewController: UIViewController {
     let colors = ["red","blue",]
     
-    @IBOutlet weak var topColorLabel: UILabel!
+    @IBOutlet weak var timerLabel: UILabel!
+    @IBOutlet weak var scoreLabel: UILabel!
     
+    
+    @IBOutlet weak var topColorLabel: UILabel!
     @IBOutlet weak var bottomColorLabel: UILabel!
     
     @IBOutlet weak var yesButton: UIButton!
