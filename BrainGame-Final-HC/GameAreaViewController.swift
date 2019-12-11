@@ -50,6 +50,7 @@ class GameAreaViewController: UIViewController {
     
     func gameRun(){
         if difficulty == .easy{
+            gameEasy()
             print("Hello")
         }
     }
@@ -66,8 +67,10 @@ class GameAreaViewController: UIViewController {
     }
     
     func gameEasy(){
+        scoreLabel.text = "Score: \(points)"
         topColorLabel.text = colors[Int.random(in: 0..<colors.count)]
-        bottomColorLabel.text = colors[Int.random(in: 0..<colors.count)]
+        var bottomLableColor = colors[Int.random(in: 0..<colors.count)]
+        bottomColorLabel.text = bottomLableColor
     }
     
     @IBAction func yesButtonPressed(_ sender: Any) {
