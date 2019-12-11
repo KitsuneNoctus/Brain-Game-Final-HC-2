@@ -53,7 +53,7 @@ class GameAreaViewController: UIViewController {
             print("Hello")
         }
     }
-    
+//--------------------------------------------------------------------
     func changeLabels(){
         if difficulty == .easy{
             topColorLabel.text = colors[Int.random(in: 0..<colors.count)]
@@ -71,9 +71,24 @@ class GameAreaViewController: UIViewController {
     }
     
     @IBAction func yesButtonPressed(_ sender: Any) {
+        if topColorLabel.text == bottomColorLabel.text{
+            points += 10
+            changeLabels()
+        }else{
+            points -= 10
+            changeLabels()
+        }
         
     }
+    
     @IBAction func noButtonPressed(_ sender: Any) {
+        if topColorLabel.text != bottomColorLabel.text{
+            points += 10
+            changeLabels()
+        }else{
+            points -= 10
+            changeLabels()
+        }
     }
     
 
